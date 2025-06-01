@@ -123,4 +123,143 @@ class hello {
 
 //-------------------------------------------------------------------
 
-//Understanding
+//Understanding if else in java
+
+class hello{
+    public static void main(String[] args){
+        scenario 1 : its going to rain
+        scenario 2 : No rain
+        System.out.println("Take an umbrella");
+        System.out.println("Enjoy the sunlight");
+       boolean rain = false;
+       if(rain){
+        System.out.println("Take an umbrella");
+       }
+       else{
+        System.out.println("Enjoy the sunlight");
+       }
+    }
+}
+
+//comparison operator: Operator which is used to compare two values (5>4). Here > is a comparison operator here we are comparing two values.
+
+import java.util.Scanner;
+
+class hello{
+    public static void main(String[] args){
+        int num1 = 40;
+        int num2 = 69;
+
+//Find the Greatest number
+
+        if(num1>num2){
+            System.out.println("Number 1 is greater");
+        }
+        else{
+            System.out.println("Number 2 is greater");
+        }
+
+//Check whether Number 1 and Number 2 is Equal or Not
+
+        if(num1 == num2){
+            System.out.println("Both are Equal");
+        }
+        else{
+            System.out.println("Not Equal");
+        }
+
+//Get the input from the user and check whether Number 1 and Number 2 is Equal or not.
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Number1: ");
+        int num1 = sc.nextInt();
+        System.out.println("Enter the Number2: ");
+        int num2 = sc.nextInt();
+
+        if(num1 == num2){
+            System.out.println("Both are equal");
+        }
+        else{
+            System.out.println("Not Equal");
+        }
+    }
+}
+
+//How to compare Two Strings
+
+//In java, when you compare two strings with '==', it checks for the references
+// rather than comparing the actual content value inside them. So, if you want to compare 
+// the content between two strings, always use the equals() function.
+
+class hello{
+    public static void main(String[] args){
+        String f1 = new String("apple");
+        String f2 = new String("apple");
+        // String f1 = "apple";
+        // String f2 = "apple";
+        System.out.println(f1.equals(f2));
+    }
+}
+
+//Logical operators
+
+//In Java, Logical operators are symbols that connect two or more expressions of boolean 
+//type (i.e., true or false) and return a boolean value as a result.
+
+class hello{
+    public static void main(String[] args){
+
+//And Operator
+
+        boolean hungry = true;
+        boolean icecream = true;
+
+        if(hungry && icecream){
+            System.out.println("Eat");
+        }
+        else{
+            System.out.print("Don't eat");
+        }
+
+//Or Operator
+     
+        boolean cricket = false;
+        boolean football = false;
+
+        if(cricket || football){
+            System.out.println("Play");
+        }
+        else{
+            System.out.println("Don't Play");
+        }
+
+//to find whether a Number is Divisible by 3 or not
+
+        int num = 15;
+        if(num%3 == 0){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+
+//to find whether a Number id Divisible by 5 or not
+
+        if(num%5 == 0){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+
+//divisible by 3 and divisible by 5
+
+        int num = 12;
+        if(num%3 == 0 && num%5 == 0){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
+    }
+}
