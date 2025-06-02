@@ -263,3 +263,47 @@ class hello{
         }
     }
 }
+
+//Understanding else if and nested if
+
+//else - if : In Java,'else-if' is used after an 'if' statement and before an
+//'optional else' statement to test multiple conditions sequentially.
+
+//nested-if : his nesting allows you to check for multiple conditions in a hierarchical manner,
+//where the inner if statement is executed only if the condition of the outer if statement is true.
+//It's a powerful feature for handling complex decision-making processes.
+
+//Ternary Operator in Java
+
+//Ternary operator in Jav is a shorthand for the if-else
+// statement and is used to assign a value to a variable
+// based on a condition. It is called "ternary" because it
+// involves three parts:
+// --> Condition: an expression that evaluates to true or false.
+// --> First value (if true): The value assigned if the condition is true.
+// --> Second value (if false): The value assigned if the condition is false.
+
+class hello{
+    public static void main(String[] args){
+        System.out.println(false?"yes":"no");
+    }
+}
+
+// variable = (condition) ? valueiftrue :valueifflase;
+
+//For loop Explaination
+
+//in Java, a for loop is used to repeatedly execute a block of statement
+//for a specific number of times
+
+//demonstarting for loop
+//initialize, what is the starting point?
+//check whether current print is on necessary limit.
+
+class hello{
+    public static void main(String[] args){
+        for(int i=1; i<=5; i++){
+            System.out.println("Aishu");
+        }
+    }
+}
