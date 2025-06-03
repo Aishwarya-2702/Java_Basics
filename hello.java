@@ -307,3 +307,122 @@ class hello{
         }
     }
 }
+
+//Array in Java
+
+// An array is like a row of boxes where each box can hold a 
+// value, but all boxes must hold the same type of value. You
+// can quickly find and change the contents of any box by 
+// Knowing its position in the row.
+
+//Array Playlist
+
+class hello{
+    public static void main(String[] args){
+        String[] playlist = new String[3]; 
+        String[] playlist ={"song1","song2","song3"};
+
+        playlist[0] = "song1";
+        System.out.println(playlist[0]);
+
+        playlist[1] = "song2";
+        System.out.println(playlist[1]);
+
+        playlist[2] = "song3";
+        System.out.println(playlist[2]);
+    }
+}
+
+//Nested for loop
+
+//In java, a nested loop is essentially a
+// loop that runs inside another loop.
+// each time the outer loop runs once,
+// the inner loop runs completely from 
+// start to finish.
+
+class hello{
+    public static void main(String[] args){
+        for (int i=1; i<=2; i++){
+            for(int count=1; count<=2; count++){
+            System.out.println("aishu");
+        }
+        }
+
+        for(int count=1; count<=2; count++){
+            System.out.println("aishu");
+        }
+    }
+}
+
+class hello{
+    public static void main(String[] args){
+        for(int teacher=1;teacher<=3; teacher++){
+            for(int count=1; count<=1; count++){
+                System.out.println("AIshu");
+            }
+        }
+    }
+}
+
+//While loop
+
+//Understand this: 
+//Anything which is achieved by while
+//loop can also be achieved in for loop
+
+//Why While Loop?
+// while loops are typically used when the 
+// number of iteration is not known before 
+// the loop starts,
+
+// for loops are used when the number of iterations is known.
+
+// print number from 1 to 10 in for loop and in while loop
+
+class hello{
+    public static void main(String[] args){
+        for(int i=1; i<=10; i++){
+            System.out.println(i);
+        }
+
+        int j=1;
+        while(j<=10){
+            System.out.println(j);
+            j++;
+        }
+    }
+}
+
+//create a random number until the random number is 5
+
+import java.util.Random;
+
+class hello{
+    public static void main(String[] args){
+        Random rand = new Random();
+        int newnum = 0;
+
+        while (newnum != 5){
+            newnum = rand.nextInt(10);
+            System.out.println(newnum);
+        }
+    }
+}
+
+//do-while loop
+
+// A do-while loop is a variant of the while 
+// loop which guarantees that the loop's
+// body will be executed at least once.
+
+class hello{
+    public static void main(String[] args){
+        int count = 0;
+        do{
+            System.out.println("AIshu");
+            count = count+1;
+        }
+        while(count<=1);
+    }
+}

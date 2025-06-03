@@ -457,3 +457,250 @@ class challenge{
         }
     }
 }
+
+//--------------------------------------------------------------------------------
+
+//Write a program to print reverse number from 1 to 10
+
+class challenge{
+    public static void main(String[] args){
+        for(int i=10; i>=1; i--){
+            System.out.println(i);
+        }
+    }
+}
+
+//---------------------------------------------------------------------------------
+
+//Get input for variable a and b and print the number from a and b
+//input - 5, 10
+//Output - 5,6,7,8,9,10
+
+import java.util.Scanner;
+
+class challenge{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Starting Number: ");
+        int a = sc.nextInt();
+        System.out.print("Ending Number: ");
+        int b = sc.nextInt();
+
+        for(int i=a; i<=b; i++){
+            System.out.println(i);
+        }
+    }
+}
+
+//-------------------------------------------------------------------------------------
+
+//Print even number between 1 to 10 using for loop and if condition
+
+class challenge{
+    public static void main(String[] args){
+        for(int i=1;i<=10;i++){
+            if(i%2 == 0){
+                System.out.println("Even Number: "+i);
+            }
+        }
+    }
+}
+
+//-------------------------------------------------------------------------------------
+
+//count the number of odd number from 1 to 10
+
+class challenge{
+    public static void main(String[] args){
+        int oddcount = 0;
+        for(int i=1; i<=10; i++){
+            if(i%2 != 0){
+                oddcount = oddcount+1;
+            }
+        }
+        System.out.print("Count: "+oddcount);
+    }
+}
+
+//-------------------------------------------------------------------------------------
+
+//Count the number of even number from 1 to 10
+
+class challenge{
+    public static void main(String[] args){
+        int evencount = 0;
+        for(int i=1; i<=10; i++){
+            if(i%2 == 0){
+                evencount = evencount+1;
+            }
+        }
+        System.out.print("Even Count: "+evencount);
+    }
+}
+
+//---------------------------------------------------------------------------------------
+
+//Print the number which are divisible by both 3 and 5 Range 1 to 100
+
+class challenge{
+    public static void main(String[] args){
+        for(int i=1; i<=100; i++){
+            if(i%3 == 0 && i%5 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+//---------------------------------------------------------------------------------------
+
+//Create an integer array, Get input for 5 numbers and print their sum or total.
+
+import java.util.Scanner;
+
+class challenge{
+    public static void main(String[] args){
+        int[] num = new int[5];
+
+        Scanner sc = new Scanner(System.in);
+        num[0] = sc.nextInt();
+        num[1] = sc.nextInt();
+        num[2] = sc.nextInt();
+        num[3] = sc.nextInt();
+        num[4] = sc.nextInt();
+
+        System.out.println(num[0]+num[1]+num[2]+num[3]+num[4]);
+    }
+}
+
+//--------------------------------------------------------------------------------------------
+
+//Get input for 5 Numbers using Array and for loop
+
+import java.util.Scanner;
+
+class challenge{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int[] marks = new int[5];
+
+        for(int i=0;i<=4;i++){
+            marks[i] = sc.nextInt();
+        }
+        for(int i=marks[0]; i<=marks[4]; i++){
+            System.out.println(i);
+        }
+    }
+}
+
+//---------------------------------------------------------------------------------
+
+//print 10 Numbers from an Array using For loop
+
+import java.util.Scanner;
+
+class challenge{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int[] nums = new int[10];
+        for(int i=0; i<=9; i++){
+            nums[i] = sc.nextInt();
+        }
+        for(int i=0; i<=9; i++){
+            System.out.println(nums[i]);
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+
+//Print 2 table using for loop
+
+class challenge{
+    public static void main(String[] args){
+        for(int i=1; i<=10; i++){
+            System.out.println(i+ "x2=" +i*2);
+        }
+    }
+}
+
+//--------------------------------------------------------------------------------
+
+//get one input which table to be print using for loop
+
+import java.util.Scanner;
+
+class challenge{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the table: ");
+        int num = sc.nextInt();
+
+        for(int i=1; i<=10; i++){
+            System.out.println(i*num);
+        }
+    }
+}
+
+//---------------------------------------------------------------------------------
+
+//Get input for size on array
+//Get input for each element in an array
+//Find and print middle element in an array
+
+import java.util.Scanner;
+
+class challenge{
+    public static void main(String[] args){
+        //Get input for size on array
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Size: ");
+        int size = sc.nextInt();
+        int[] marks = new int[size];
+
+        //Get input for each element in an array
+        for(int i=0; i<=size-1; i++){
+            marks[i] = sc.nextInt();
+        }
+
+        //find and print middle element in an array
+
+    }
+}
+
+//--------------------------------------------------------------------------------
+
+//Print this output
+//***
+//***
+//***
+
+class challenge{
+    public static void main(String[] args){
+        for(int i=1; i<=3; i++){
+            for(int count=1; count<=3; count++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//--------------------------------------------------------------------------------
+
+//Print the output
+//*
+//**
+//***
+
+class challenge{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+            for(int count=1; count<=i;count++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
